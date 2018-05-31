@@ -86,3 +86,13 @@ if ( ! function_exists( 'headless-wp_setup' ) ) :
 	}
 endif; // headless-wp_setup
 add_action( 'after_setup_theme', 'headless_wp_setup' );
+
+/**
+ * Send a request to build the site once a post is published
+ */
+
+function deploy_on_publish() {
+	wp_remote_post( 'https://api.netlify.com/build_hooks/5b0f8c101f12b738363f6567' );
+}
+
+add_action( 'post_publish', 'deploy_on_publish' );
