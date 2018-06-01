@@ -96,13 +96,3 @@ function deploy_on_publish() {
 }
 
 add_action( 'publish_post', 'deploy_on_publish' );
-
-/**
- * Send a request to build the site once a post is saved
- */
-
-function deploy_on_save() {
-	wp_remote_post( 'https://api.netlify.com/build_hooks/5b0f8c101f12b738363f6567', '' );
-}
-
-add_action( 'save_post', 'deploy_on_save' );
