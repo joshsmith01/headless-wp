@@ -87,6 +87,60 @@ if ( ! function_exists( 'headless-wp_setup' ) ) :
 endif; // headless-wp_setup
 add_action( 'after_setup_theme', 'headless_wp_setup' );
 
+add_action( 'init', 'codex_book_init' );
+
+
+/**
+ * Register a speaking post type.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_post_type
+ */
+function codex_book_init() {
+	$labels = array(
+		'name'               => _x( 'Talks', 'post type general name', 'headless-wp' ),
+		'singular_name'      => _x( 'Talk', 'post type singular name', 'headless-wp' ),
+		'menu_name'          => _x( 'Talks', 'admin menu', 'headless-wp' ),
+		'name_admin_bar'     => _x( 'Talk', 'add new on admin bar', 'headless-wp' ),
+		'add_new'            => _x( 'Add New', 'talk', 'headless-wp' ),
+		'add_new_item'       => __( 'Add New Talk', 'headless-wp' ),
+		'new_item'           => __( 'New Talk', 'headless-wp' ),
+		'edit_item'          => __( 'Edit Talk', 'headless-wp' ),
+		'view_item'          => __( 'View Talk', 'headless-wp' ),
+		'all_items'          => __( 'All Talks', 'headless-wp' ),
+		'search_items'       => __( 'Search Talks', 'headless-wp' ),
+		'parent_item_colon'  => __( 'Parent Talks:', 'headless-wp' ),
+		'not_found'          => __( 'No talks found.', 'headless-wp' ),
+		'not_found_in_trash' => __( 'No talks found in Trash.', 'headless-wp' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'description'        => __( 'Description.', 'headless-wp' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'show_in_rest'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'talks' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+		'menu_icon'          => 'dashicons-megaphone'
+	);
+
+	register_post_type( 'talks', $args );
+}
+
+
+
+
+
+
+
+
 /**
  * Send a request to build the site once a post is published
  */
