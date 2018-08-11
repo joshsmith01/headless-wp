@@ -87,15 +87,13 @@ if ( ! function_exists( 'headless-wp_setup' ) ) :
 endif; // headless-wp_setup
 add_action( 'after_setup_theme', 'headless_wp_setup' );
 
-add_action( 'init', 'codex_book_init' );
-
 
 /**
  * Register a speaking post type.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_post_type
  */
-function codex_book_init() {
+function headless_wp_talk_init() {
 	$labels = array(
 		'name'               => _x( 'Talks', 'post type general name', 'headless-wp' ),
 		'singular_name'      => _x( 'Talk', 'post type singular name', 'headless-wp' ),
@@ -127,18 +125,60 @@ function codex_book_init() {
 		'has_archive'        => true,
 		'hierarchical'       => false,
 		'menu_position'      => null,
-		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
 		'menu_icon'          => 'dashicons-megaphone'
 	);
 
 	register_post_type( 'talks', $args );
 }
 
+add_action( 'init', 'headless_wp_talk_init' );
 
+/**
+ * Register a Tips and Tricks post type.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_post_type
+ */
+function headless_wp_tips_and_tricks_init() {
+	$labels = array(
+		'name'               => _x( 'Tips and Tricks', 'post type general name', 'headless-wp' ),
+		'singular_name'      => _x( 'Tips and Tricks', 'post type singular name', 'headless-wp' ),
+		'menu_name'          => _x( 'Tips and Tricks', 'admin menu', 'headless-wp' ),
+		'name_admin_bar'     => _x( 'Tips and Tricks', 'add new on admin bar', 'headless-wp' ),
+		'add_new'            => _x( 'Add New', 'Tips and Tricks', 'headless-wp' ),
+		'add_new_item'       => __( 'Add New Tips and Tricks', 'headless-wp' ),
+		'new_item'           => __( 'New Tips and Tricks', 'headless-wp' ),
+		'edit_item'          => __( 'Edit Tips and Tricks', 'headless-wp' ),
+		'view_item'          => __( 'View Tips and Tricks', 'headless-wp' ),
+		'all_items'          => __( 'All Tips and Tricks', 'headless-wp' ),
+		'search_items'       => __( 'Search Tips and Tricks', 'headless-wp' ),
+		'parent_item_colon'  => __( 'Parent Tips and Tricks:', 'headless-wp' ),
+		'not_found'          => __( 'No Tips and Tricks found.', 'headless-wp' ),
+		'not_found_in_trash' => __( 'No Tips and Tricks found in Trash.', 'headless-wp' )
+	);
 
+	$args = array(
+		'labels'             => $labels,
+		'description'        => __( 'Description.', 'headless-wp' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'show_in_rest'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'tips-tricks' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
+		'menu_icon'          => 'dashicons-money'
+	);
 
+	register_post_type( 'tips-and-tricks', $args );
+}
 
-
+add_action( 'init', 'headless_wp_tips_and_tricks_init' );
 
 
 /**

@@ -1,5 +1,12 @@
 #### [unreleased]
 
+### 1.0.4 / 2018-08-11
+#### Added
+* Add a CPT for Tips and Tricks
+
+#### Updated
+* Refactor Speaking CPT for clarity
+
 ### 1.0.3 / 2018-08-10
 #### Added
 * Add a Custom Post Type for speaking sessions
