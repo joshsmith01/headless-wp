@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 1.0.5 / 2018-08-11
+#### Added
+* Add existing taxonomies to new CPTs
+
 ### 1.0.4 / 2018-08-11
 #### Added
 * Add a CPT for Tips and Tricks

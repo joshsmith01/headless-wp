@@ -126,7 +126,8 @@ function headless_wp_talk_init() {
 		'hierarchical'       => false,
 		'menu_position'      => null,
 		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
-		'menu_icon'          => 'dashicons-megaphone'
+		'menu_icon'          => 'dashicons-megaphone',
+		'taxonomies'         => array( 'category','post_tag' )
 	);
 
 	register_post_type( 'talks', $args );
@@ -172,7 +173,8 @@ function headless_wp_tips_and_tricks_init() {
 		'hierarchical'       => false,
 		'menu_position'      => null,
 		'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
-		'menu_icon'          => 'dashicons-money'
+		'menu_icon'          => 'dashicons-money',
+		'taxonomies'         => array( 'category', 'post_tag' )
 	);
 
 	register_post_type( 'tips-and-tricks', $args );
