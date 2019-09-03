@@ -17,5 +17,5 @@ redirect( $newURL, 301 );
 <meta content="0;url=<?php echo $newURL; ?>" http-equiv"refresh">
 
 <script type="text/javascript">
-    window.location = '<?php echo $newURL; ?>';
+	window.location = '<?php echo $newURL; ?>';
 </script>
