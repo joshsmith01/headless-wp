@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0df4107e-7d2c-4b75-b841-24d9dbd8bce0/deploy-status)](https://app.netlify.com/sites/hopeful-franklin-93f64f/deploys)
+
 # Headless WP - A theme for headless WordPress installations
 
 * Contributors: [Josh Smith](https://efficiencyofmovement.com)
