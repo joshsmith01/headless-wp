@@ -1,0 +1,163 @@
+{
+    "key": "group_5de6caec50930",
+    "title": "Press and Award Group",
+    "fields": [
+        {
+            "key": "field_5de6cbe8959be",
+            "label": "LInk",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5de6cbf0959bf",
+            "label": "Link to Article",
+            "name": "link_to_article",
+            "type": "url",
+            "instructions": "Add a complete URL to the external article",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "80",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5de6cd1b959c4",
+            "label": "Redirect?",
+            "name": "redirect",
+            "type": "true_false",
+            "instructions": "Should this post immediately redirect to the Press Article?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Redirect",
+            "ui_off_text": "Stay Here"
+        },
+        {
+            "key": "field_5de6ccb7959c1",
+            "label": "Type",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5de6cc11959c0",
+            "label": "Press Type",
+            "name": "press_type",
+            "type": "select",
+            "instructions": "Select the type of article that was written.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "choices": {
+                "press-release": "Press Release",
+                "about-article": "About Article",
+                "award": "Award",
+                "news": "News"
+            },
+            "default_value": [
+                "about-article"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5de6cd0e959c3",
+            "label": "Excerpt",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5de6ccc2959c2",
+            "label": "Excerpt",
+            "name": "excerpt",
+            "type": "wysiwyg",
+            "instructions": "Add a short excerpt about the external news article that can be used throughout the site. Sorry, no images allowed.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 0,
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "press-and-award"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Data specific to Press and Award posts",
+    "show_in_graphql": 1,
+    "graphql_field_name": "groupPressAndAward",
+    "modified": 1575407020
+}

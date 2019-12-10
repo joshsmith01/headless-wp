@@ -1,0 +1,141 @@
+{
+    "key": "group_5de6c57a23a18",
+    "title": "Download Group",
+    "fields": [
+        {
+            "key": "field_5de6c6c5378ed",
+            "label": "File or URL",
+            "name": "file_or_url",
+            "type": "true_false",
+            "instructions": "Select the type of download vector you wish the user to use.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "message": "Download an internal resource or use an external URL to retrieve the file.",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "Internal File",
+            "ui_off_text": "External URL"
+        },
+        {
+            "key": "field_5de6c594378e9",
+            "label": "Download File",
+            "name": "download_file",
+            "type": "file",
+            "instructions": "Add the file that is to be downloaded.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5de6c6c5378ed",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "76",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5de6c694378ec",
+            "label": "Download URL",
+            "name": "download_url",
+            "type": "url",
+            "instructions": "Enter a complete URL to the file for download by the user. Ensure the file resides in the download location; i.e. Amazon S3",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5de6c6c5378ed",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "80",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5de6c620378ea",
+            "label": "Version",
+            "name": "version",
+            "type": "text",
+            "instructions": "Add the version of the file",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "1.0",
+            "placeholder": "1.0",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5de6c650378eb",
+            "label": "Download Count",
+            "name": "download_count",
+            "type": "number",
+            "instructions": "Add the number of times this file has been downloaded.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "download"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "show_in_graphql": 1,
+    "graphql_field_name": "groupDownload",
+    "modified": 1575405505
+}

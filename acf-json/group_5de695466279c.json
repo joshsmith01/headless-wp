@@ -1,0 +1,286 @@
+{
+    "key": "group_5de695466279c",
+    "title": "Webinar Group",
+    "fields": [
+        {
+            "key": "field_5de698372f769",
+            "label": "Date\/Times",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5de695672f766",
+            "label": "Date",
+            "name": "date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.33",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "display_format": "F j, Y",
+            "return_format": "Ymd",
+            "first_day": 1
+        },
+        {
+            "key": "field_5de697b52f767",
+            "label": "Start Time",
+            "name": "start_time",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.33",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "display_format": "g:i a",
+            "return_format": "H:i"
+        },
+        {
+            "key": "field_5de697ef2f768",
+            "label": "End Time",
+            "name": "end_time",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.33",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "display_format": "g:i a",
+            "return_format": "H:i"
+        },
+        {
+            "key": "field_5de6984a2f76a",
+            "label": "Forms",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5de6986c2f76b",
+            "label": "Sign Up Form",
+            "name": "sign_up_form_url",
+            "type": "url",
+            "instructions": "Enter the complete URL for the embedded form",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "https:\/\/go.pardot.com\/i\/a-signup-form\/8448z44"
+        },
+        {
+            "key": "field_5de698cc2f76c",
+            "label": "Presentation Slides Download Form",
+            "name": "presentation_slides_download_form",
+            "type": "url",
+            "instructions": "Enter a complete URL for the embedded form that users will use to download the slides.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "https:\/\/go.pardot.com\/my-slides\/for-download\/838jj0z"
+        },
+        {
+            "key": "field_5de699952f76f",
+            "label": "Video",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5de699a12f770",
+            "label": "Video URL",
+            "name": "video_url",
+            "type": "url",
+            "instructions": "Add a complete URL for the Video",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "https:\/\/youtube.com\/my-video\/of-my-webinar"
+        },
+        {
+            "key": "field_5de699d42f771",
+            "label": "Video Background",
+            "name": "video_background",
+            "type": "image",
+            "instructions": "Add a background image to show users while the video loads",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5de69a032f772",
+            "label": "Video Field",
+            "name": "video_field",
+            "type": "text",
+            "instructions": "Add a video field",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5de699562f76d",
+            "label": "Presenters",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5de699632f76e",
+            "label": "Presenters",
+            "name": "presenters",
+            "type": "relationship",
+            "instructions": "Pick one or more presenters for the Webinar",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "author"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        },
+        {
+            "key": "field_5de72c5cf9d90",
+            "label": "A message",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 0,
+            "message": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" width=\"107\" height=\"30\" viewBox=\"0 0 107 30\"><defs><image id=\"ree5b\" width=\"262\" height=\"74\" xlink:href=\"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQYAAABKCAYAAABZ2PqfAAAgAElEQVR4Xu19C5glVXXuXlVnpkeEmUhUmsfwEpWgUWhjxFccxWCG6drVM9rxouIbAkGNBr0+EgkxEE0016jxakbxlRhN2jBdq3pAiQoa9cYkMvEBMQKiMSheJMO0POb0OVUr33\/urnOrq+t5qup0T+z9fX4yffZee+9VVWuvvR7\/ItVim56efrhlWe9USp2tlBIR+UwYhq\/eu3fvd1ucdp30OgfWOVCTA1RzfObwc845Z7LT6XxdKfXQRKcfichjfN\/\/SVtzr9Nd58A6B+pxoDXBoLX+Q6XUGzOW9\/vMfFm9pa+PXufAOgfa4kCbguFqpdT2jIXvYeZdbW1qne46B9Y5UI8DbQqGjyqlXpi2PBH5oO\/759db+vrodQ6sc6AtDrQmGGZmZraFYXhdxsKfwsxfbmtTa4Uu7Cy2bZ9JRN9n5n1rZV3r6zi0OOA4zplKqckwDL+wd+\/e\/eNYPWmtv6GUOr7hyW5eXFx86hFHHHEhEf2xUmqDod8joteEYfhhIoJgOKnJeYnos57nPadJmnVoaa3\/TCl1MQTDxo0bHzY3NxfUoVd37I4dOx5ERIfdc889d11\/\/fUHR6GntT7Ctu0HiMhhSqmfC8PwfsuyukR0X6fTuavuHi+44IINd9xxx8mgif+B\/n333de79tpr7x1lvW2NmZ2dPbzX63XCMDzMsqyNRPSAPXv2\/GvT82Gebrf7A\/BaKfVmZr686TnS6EEw\/IFS6ndbmOzTExMTzw+C4LBer\/d0IgqVUtfZtt0NgmBOKfX0pucUkef5vv+JpumOQm92dnZLt9u9XSn1QIwXkRnf971RaDU1xnXd54gIeI92n1Lq\/yqlDiillvBvIsKHiI98s1IKH\/4m\/LeIYA8PiPaStx4R+U8i+p5SCh\/JP+GZMzMOn1Jt27Ztnc2bN2NNmD\/Z8A79FOwkIvQBX\/H\/EnUUEaz\/\/sTAnlIqKViOUErZiX7YZ3SI4SfL8ALz4MNEA2\/SNO1\/Z+YTSm2yQifHcX6TiN5rhty+uLh44vXXX9+vQGKkrrRjx46Tbdu+daTRxYPuUkr9ETO\/HV0dx3mTUuoSIjqyeGjlHgcWFxcnRz0JK89WMEBrfYlS6h2xbn\/HzIjnWLWmtd6hlFpYhQX8u1LqY0S02\/M8nH65TWv9f5RSUJ8PmUZE857n7Wx4wTi4v62UekREV0Se4\/v+3zY8zwpyA8nnOM6jbNuOS8pG5g3DEPfqrzPz6SCotf4XpdSjLMt6fCMTLCfy0\/n5+bYEXKXlzs7O2ktLS7eKSPIEOZWZ\/60SsQY7F9h9GpwpkxSuL+9XSl3KzDj5U5vWGpqVHseCGpxjNzP\/RoP08F1uJyJ494ZNRK73fb9xbTu57taMj0YQ3K2U+l5MMOCjOJKZH9IkA9caLa01XLErpLqIvNv3\/d9arfXOzMw8LgzDf86aHy+dbduvKVpfEASbbNveFAQBgtdOIqKTReR0InpcinqeRg5XjVlmTl2L1vrzbVw1i\/ZV8\/dPMPPzatJYNtx13c+IyAotU0Qe7fv+jU3OlSkYtm\/fvvmaa65ZbHIyrfX3lVI9Zj4FdF3X\/Z6I9KN\/NzUXTui6Rq+m1mIE4heUUr+SQnNxYmLi2Lm5uXuanK8sLdd1TxORvBfKY+aZsvSS\/WZnZ49cWlraJSKvhmZYQOc+EXF834cQWNa01j9USh2d+DMMtzho7haRu4kIPITWAfvBoogcJKLIoAqbw8AGoZT6vZx1oM+fisBkQVti\/WDfgEFxi4hAkz5cKQWbxIOMERD2huShegMzQzA20nbu3PkLQRDclEHsfcz8m41MlEFkuDnXda8QEdgErrMsqxGXSBiGnyaiTZ7nnRgTDPdaloW7bu3W7\/ePtCzrmUqpHzMz4iZWvWmtz1BK3ZCzkIuYGer02NvMzMyJYRjeljNxLcEQ0b3sssusffv2XSQif6KUmsiZDwbQJ8aNk7Ozsw9YWlo6PwzDO0Tkh5Zl3WGeb+bVI4+RWmsIjk5aH3iLonez6sPAQbpp06bJIAgmlVLHKKWOYuZ3VaWT1d9xnPcTUdbV5J5er3ds0wd5fC1DwQBfKRHB6NN0+w9m3gqiWmtI\/LhkbmKunmHSnU0Qq0tDa\/0RpdSLsugQ0bc8z\/vFuvOMMh4nerfbhfDPao0Ihoi467pPEpHPGo9G6pzgx4EDB85oy9Ke987VEQyj8L\/sGPOcYKRN88wMyIjIq3zff09ZmlX7LVOHHMe5iYh+oSqRgv4HmHng6mlJMFzFzM9ueM0jkdNaH6WUggV+Yx4BEdnm+z6uG2NtOI273S5O6bEIBkziuu5zReSTeRslogs9z\/vzNphR8M7dyMyPbmPeOjS11v8T3rwCGt9m5tPirto6cybHJgXDaxGQRERvFRGoYHUb7qsnxgQD7oBwv8zXJSwiE0T0BnNPXQ0X3IotaK1xny2THPYpZp6ty4NRxmuthz7\/lPGNagwR\/SwjWmz+W5j54aPsp2iM1vrHKRm+0bChx6yIzrh+N3EcgCUYaNkFAvVXPc+DRtZ4WyYYTKr0D4joRZ7n\/VXd2VzXfa+InM\/MgxPUvJTvYmYYp2o1rfVLlVJXTExMHLcWDI+zs7MbTYRaMs08bZ\/9MAxPXFhYQADUWJvWGgY3BOmktVYEw\/T09FmWZeW+wGEYPmlhYaHxq6wxeGcFHq05waC1xoHxN2VeipZiJwZTr3BXGh\/y4zudzuOuuuqqH5VZYFafKPWamQfzGMFQO+V6enr6eMuyvkZEV3qe94Y6a2xqrOu6LxSRuAEUJ3OmO1hE3uL7fp7FvKmlLaOjtYYxD1eesQkGGCNvuOEGvEt5QvMPmPnSpjddIBj+npnTvEdNL6M0Pa01UgWeFBuQ9x6FYRietLCwgOtro23Fi+s4jgtJpJS6NQzDFy8sLHypzIzmxHyzUgo+\/EUiek8YhluJ6G0QDCZEGG6m3\/Y8D6hOIzWtNcKrP2yCh1Y1YCi+Aa3115RSU7G\/IcoTmBRZ7ccTExPHz83NIRx5bK3gQ2lFY8DmXNf9lIhk2oJE5Grf9xvxViWeC0KzT81g8BeYedvYmF8wkdb6l0wYedQTBkhcky\/KGfpWZsa71mhbIRhMEst\/xKQ71F0EpOTGZ4vIQ43hEp4HuKgQW4\/73VGWZcH\/q8IwhBv0ZqUU\/NRVG1xOSLqCawjty8z8lKpE2ujvuu5TReSLMdrfnZqaevi+ffuuFZGzcuY8l5lzDXNNr1drjTgGGK3SWpuC4VIR+f2c\/XyXmR\/Wwn4RbfvYQ0Qw\/IVS6gXRWonojUEQ\/K1lWQgMzNI+7+z1eluvueaabpO8S51Ma40Yf8T6V20Lk5OTu\/bv339Et9tF4sf\/AAF8HJ1O51tBEEBQNNJE5OW+71\/ZCLGaRLTWiHIcAs9EWpHjONNE5OeQH7twM2HpWR9Ka4LB2ITyntfdzDw4QJpsq7XfqnvYtWvX0f1+HwGBUWrCQdu2j9uzZ89dWmu8Q9NZNI1N8GNV58zrnyoYUiLkfkJEuWmvUO2J6KWe5304mtBxnHOJ6H2IGhORDxHRy6FFxCLUSu9FRBB99vNmAFxuk3nx9qUJ1+xogoZuiYUC32uiGw+YuzW8MJkWd8uyzpifn8epNpamtf4HpdQTMiZrTTA4jjNDRHvyNhnZoppkxKEiGLTWb0FadWzvH2Lml+HfJYy3X2XmRpPOMo1jiReo0JPgOM5XsYkwDH8tDibhuu5WY5QbJH4Q0UguFq01\/NwXGMZ9lJlf3OQLNCqtFO1qWbiq1voVSqnMQJRxo1lpra9XSj1tDQqGgJlTIxRHfTYYt1qCsMqaTXwJDIgPjsaFYXj6wsICwJQHzXXdbyJHIofu47NyT6qsJeqbKRgcx7mAiKKgE6g1j92zZ893siYxUPGfhn0hDMMXLSwsfC7qa05OJOfAGHdQRC6sgpuwY8eOR9u2DeNeFDj0NGaO3+lH2XvtMQAtUUrBHjN0\/9m2fVocsMMAbcBOk+UivD8IgmPHhczjuu5nc+werWkMJdxwdzHz8MOo\/XAMgdUShFXWr7UGzOHu2JgvMvMy4e04zsuI6IM5dBs9LDMFA2LBN2zYANcWjIhoNwdBAG0gsyaE+VCAWgTX3Tv7\/f4b40YRrfVjlFJ\/qZRCSDDuRK8oug7s3LnzEUEQQOBEaE8IhkF+el6gTpXnMnJfx3FeTURxD0sq5oLWGjkDv50z0SXM\/L9GXkiFgVpreJzccWsMKS9\/cgm3Np1cZzSGVdGQKjwSYC58M550loa5kKZVJObo2rZ9LGwSFebO7JoWx3BGhE+otV5mJVVK3Y\/wViL6ukHOSSVsWda5Jl0UG35BPElm+\/btExs2bIDmAA3iNhFB6OcKl53JdoP779eBJDRUcYh+1\/O8K4x6dZrneVkZaE3wJ5OG0YJgWxjC0xGR9jxvhbHR2CGAFWFlELx1amrqEZdddhkQilptqyUYXNd9m4i8Pmdzn2HmX2t682tdY3Bd91kigoMvaj9YXFw8OS13xHGcy4nod7J4JCJv8H2\/KJS6FIvTBMN7mPmVRtrCLrAiLbYU5f\/fCR\/9m6ampt4Zf\/Edx3kGESEg6LgK9MJOp3PCVVddBfUd98c\/YeZRvCcVpkzvmoK5MHBRZn3cSc9FkqqInOP7\/jW1F1ZAYLUEQ5FlXUTe5vt+Vh2SkdlyCAiGZZgLcFF6nve2tA1rreGqR+hAKqgSksLOOOOMk5s4YNIEww97vd6pJqUTag5OuiZAW68zbpUhtNfMzAzARP9OKYXAjjLt08w8qFVhriXvXq0AFa313yulhnEURYFbKbEOy\/bbVoBPkqmrIRhMbAxUXNhkUtuoRumil6ZAMHyMmTMzYYto1\/09xfs3dFFm0dZa4yr+\/Jy5XWbmumtLEwyITnx9lO3mum5RYEqVNRwQkYvihscSd884\/V9n5gGYqdb6T5VSp6+GYEiJUBu6KPOYobUGTgPwGtKaBEFwStt1PbXWVymlsrAJWzE+Tk9Pn21Z1mdyeHPX5OTk0bt3724icW\/ZNAWCoVGDXZUPAX0dx\/mAceFHQ4cuyixajuM8noj+MUfAXut53rOqriXZP1UwIAMy8ouavASoL6Vh4ETkdUT0ORF5JRG9JGWRn7Rt+xX79++\/d8uWLV4afFVyDNCH+\/3+MTBmmvBrRE9+azUEg+M4HyeiOIxXKUSdlHyK5DZxNXpt3YdaIJzy8CJaEQxFGI5E9A7P817Xxr7XqmDYvn37QzZs2AAXZdx+9hjP82CXy20p+RTL+tu2\/cg8D2IRffyeJRi2ENGjIsOe1vpapdSvliFohMoQ08EEtnwg7qM1dADxjRMiy423bDrkXnie9yr8MQaDPvZY9127dh3X7\/eBghT3uZfK2TACDS9DVhLTfhMclYQ\/L8n64m4FQDKNC4bp6eknWpb1lZyVoR7FKXUT9rLor1XBoLVGyQaUbhi0KiCvJVy\/hXFHRW9KpmBQSg1PL601QpvL1mu4t9PpnBoZCLEAk879oZxalkXrxO9TkbfEcZy9RHSOUmrsgsFxnLcCByK24ErW9BJXs5cxM3jVShunYDAuNkRawk2d1d7EzG9tZbP\/78qZ565clatE2gFBRLs8z8uNDI14VAKzYfHgwYPH1CnSkycYfjw5ObkV975t27Zt2rx5M9Jmo6IbRc8RYc8Ij45DX8OQeSEETh7UVwbhfcw8yFw0llkYMOH6G6tgOPvssx+4adMmzD2M6SeiHYl95vJm586dDw2CAFpDFhbivzBzlh2iiO+Fv49LMACgt9vtAtMD7uas9uXFxcVtbcG6mfdlzQkGx3FejAzhiCmjVCorQnmqi4qVJxiWVU+Kyq0VvnnLO7xfRC7xfX8IJ6a1fqQJcirriViGb+e6LlCbohNmrIIhURUIO71lamrqkVXdQ67rIm08M6S7LdAS86G0bmMwBwle\/EESXUa7rdPpPLmtK0Q051rUGFLyN17PzCjlWLqh3KBt23DbZ+FCfpOZ8zS13LlyBYNSCp6PQZRcUU2CnFm+IyIv8H0f5coGzbivwIgySE5Ltm0fYyK6oHUgBTVKShqbYDABTcjtH1YFwvpHQQaenp5+rGVZmYlTIvJXvu\/nuaRKv0DJjm1rDGZvuArFsSmSy7glCIJnte2BWYsag4nfGaYLIGjQoJD9Z9WHqrX+33lYDXWwRYsEAzAYjmPmQbq0KYA7CsIx6LxlYmLiD+MwbAWgIRGf5ph5oI5OT08\/xbIsxA9EbWyCISWFuhaEt+M4iOvIAgmBUXZrxPeqL0xe\/7YEg9EEAWKKuIBkTcjhkojo2o0bN547NzdX+UMYhQ9rTWNICfT6ADNHyYGVtmh4juzdrPY3zPzcSkRN5yLBADX+db7vD2owaq1RRQnxAyM1wNMT0XkoJWfcNQgpLvJKbGfmQcio4zhI3Y67P8cmGFKqI\/1ZFCE6CjNiSFlZw1upbJwnGETkH4no\/MnJyX8tiilAaPvExMRjgyB4umVZrog8sYAPPxWRSzdt2vSecWJ0riXBYPJ+8CEPvzsiKuWizOKt1hrRslmh5DiQT2DmysBIhYJBKXUTMw+qCjmO82AiwiRl6lzCrgD6URJWtDf8fS8KjZQIh759amrqeNzhTZYiDKDAZRirxpCh+pdyUWY9UHM1AZrVyRl9WqlsXFT3wqwFVZ8AGjKohm0qP4XAxDA5LMfihcsq5JLYD5DBPxKG4eWrBH67ZoyPBhx5WEGqiosy6z1KybVY1nVUbNEyggFawxN934fbqRC7z6xqXxAEZx122GG9brcLQyEwCSo3EbnC9334ezHvSwD2kiAyFo3Bdd2Pich5sbkruSizNp6SnZl8qI1XNi4pGCo\/q5QBtxDRR3q93pVXX301snRXpa0VjWHnzp0\/HwQBPFrDg7KKizKHeeQ4zo059WDumJycPL5IA0zSLyUYkCseVfJ1XfccEcGJn9niHzQ6aa2h6uCjTtYjLHpZHs7MuG6AxrLcBDOwdcEwPT19rGVZCGgaaklVXZRZmzSp7bAsp+YQNHGiJOduUTD8FFfFMAy\/QEQL8Yzaoofc5u9rRTC4rvs7InJ5tNdRXJRZfHJd9zdEJK\/sYWVs0bKCAUVDj4bb0fin4YePQFnT1ouPGWAqw7uNuYYAjCIrTj9JZwjtbUBg0kBiWhcMKenCgYi8nYgi8M2uiAwiFS3LApz3isLAlmVtDsMwSrlGoZz49QqaSNZ1Atpao5WN8wQDysWJCGoaoIwgbD8AxoHQihsTAfaL6yBqSaIGyff7\/f6Ne\/fuhfBcdYyMFEG46leJjIhXeKW82Hphg8EVDihnADOKCvQOuliW1QnDcHiNJqL4c0F8UV4V9S8x81OrCOCyggE0z2NmZHbB1pCM\/lsxJ3Ib4Jn0fX9ZOXgDCorin3FbQdqaXxwVqo3qU6R0alUwGLsG1L+ygV1VeF+2b6k8jLLE2vJKlJ1\/3P3WgsaQcQ0eKyuSUHFFk1cRDNcx8zNAMOcET5vvo71e71Xxyrw7duw42bZtSPKsMlz3HDx4cBIhnQUaSquCwXEcJIG9u4iJLf9eKnOz7BrWBcMyTo0jJJpc1\/1GAV5j2cdXp19h5maceBXBALX2ZN\/3B2XUM+78WQv\/XhiG58WL1xRoHVcyMxCloZ1sJ6J4aHV8jtYEQxpCU52nUmdsEdZDFdrrgmG8gqHIa1Dl2dXsW4j1MLJgQDZYVEasRJ2A5D7g7vrjfr9\/2eGHH76h2+3CmHh6xmafwswo1VXkBWlNMMQyOIdLFJG\/xv0PUPrxor+AuSOiwf2aiIZ2BiLCdWmYhUlEDxSRuKsX4ay4x6N02wCAJqPlokNVeWHWBcN4BUNKZjKupp\/H+xKHRySinogMSzTgPQvDEO8abFPDWB8RIeMyjm8kuuoCOCizaE8eOlTyHaqkMaDE+9TU1Ek5cQVl3lEUVYUxK8vG8B1mRj5FFDcBhOWssvKtCYaUnPfWCqAaHEx4JzJRkrPwJMswPN6nQDCkgtlWnWMt9V9NG4Prur8oIt+I80NELvZ9H6HMjTfXdZ8nIh\/PIZyJJ1lXMCyrC5ESiZikD6agSAwCYkq1OKCl67qvEhEYKrNaK4IhDUOgzQeKzWmtkTuSB1bSyEertf7rnIzHVvhZ6sG31GmVBUMyWe6+Xq93dNze1uS2jfcDB8xDsuimIVCn9a2qMYDGJ5n5XPxHSu7CcI4IWAWn4caNGy9HlmUJFKig0+lsjTLuCqoIYa5WXmStNeDjnhNjWKsPFPMYgyzcvJlIWcmaFaO8VAWYj63wc5R1NjWmQDAM83Cami+iYzBI4NaPXx0rGQBHWVMJNO4VNSuaEgxdy7Im5+fn4c9OZjvGBcPzPc9DPv6gzczMbAvDELUksjwR6LaXmQc1+qanp6dQ6r6AOY2\/yI7jnERE+EDjUO+tP1CjNSAnJA+vr7brcl0wLHujGkesiqi7rnuFiCyrQm1Z1hPm5+cz8RpHEQTJMWUOmDKuy1E0BngnhvekBD5CfJ03hmF4zsLCAqRmJBx+LgiC9ybwEuNjns3MACuFao3CNRePWzC4rvtuYFXG5x3HA8V8Jeo71nZdrguG9gWD4zgwKiP468jYbK3ZqJLfiNYaXrw8Y3bhQTeqYPia7\/sDoJUEolJyjTA0XszMywwiiTqU0ZifGLzDJWOMQ8JUUfXjRjUGA2ePO9oDV+OBmpgNAO9m1tqo67r8WRMMqKlKRL+cccC0ojG4rnuxiOBgG7a2bVTxubTWOhFVmdx+oetyJMGAWeLpojEMxlT+w80XhuFFUX1GrfULlFKochVn3Dt93x+UcXNd97moeFWgLeDnRgWD4zivJ6JlxT6I6BWe5723xFoa6VICE7KW67IgTXcIodfIZtYAkQI71RCIqKmlmvgXgAmdEqN5f6\/Xm2zL6JhcuzlgUEry+Kx9FbkuRxYMwGVgZpSZgwr8bCL6VAFzbyeiS8IwvJOI3pdAQlomaLTWRXftaKrGBIOx6IKZcQ\/KUhAEk+MqOBvTwJDynFn5uU4SV4ExbmzqblMfYhGdAsHQ2PsTrSPjOvhxZsZhOLaWRKFOTlyUxFVHMAxV\/1idB7gmKzcRGV5NXNfdKiL4MMrUsWjswTqOcx4RwTgabyMj4FRmQmxAUTk7pdTIad8FEas3m4LBdZa\/psZqrSHssyqpNfb+RJvWWn9JKfXkOBNQXdz3\/bqlHivx1XhFEEyVd8BkIlPXEQxYaNxYiKrPZTAcV2wwfv8qknSJwU09WHhXvm6qcMenGKJHVXoqNTtPT0+fZVnWZwvIjAQUk3eC4hTxPO\/EmstfU8ML4AMbvTo5jnMmUs\/jDGiynmRVxmqtkSk7mzUuL62\/rmAYuhdNLUl8XPGGupTAykfeQxY4aNL9CVdhZhpyG4Iho4TaDycmJo4fJwxZbG+ZbuBYn5Gg5QpU6x8xc146fdV3c9X7a63vzIkobfTq5Lrup0Tk2YlND9MIxs0MrXVhUeosaLm6gmFZQJLjOP9MRI8zDDgwMTHx0Lm5uSVTIONSVL1OAQr9BDMPyr05jvM0IkLWZdnWiMagtYYAe2ZC\/Wul+nLZjWmtYYhFDY6sNhIYrdYaSXBZWsEBZl7NFPOy7CndT2uNeBvgS6S1xq5OMzMzDwvDEFB9y76peOJh6UU31xEHDJDNBykGGS0VjLauYIDRcFi2O+GmucfAYsNlOWgm1BjeiGGiR7zKsdb6o0qpF1bgS23BkAXl3kT9vwr7WNF1dnb2yG63C5dtVp4IxlSGr9da496Z5Q49yMxJjM4621j1sVrrpbyy8U1dnZJ4jmbjtd\/PugwsccDcb9v2VlOeYThdbcGglBomPZk4AOD7DaosGdTh50fwbPjbrl27ju73+\/DV44UfJmUZmDN8CFkFNNJ4VJvxaWXFsW7f959Q96HUHV+Q1wDyt01NTZ1SpeBNwQmKQiJljL51tzaW8cZtB6TkrHY3MxfFyhSu1aCTIZBvmVAVkZf7vn9lIYEWOxg0diQi5gE4rygT2IRgwLaGadJaa9S4jFcgQirpa5gZhW2VuVYAfRgPZHj\/cl335SIy6FOh1RIMxgMCq\/Uyy62IvMb3\/ZFh8iusP7dryVz+oQG4zLxaa9SsyLRUW5b1IBPuXobcmu5jDqr9OYvsMvOw2vSom9Favxl1UxLjlyzLOmot8LKElwv2tJNw7Y\/20JRgGAKraK1RFRvVsZMNALK4KgDzEUlYyEd\/WAT84rruV0rUJkjSrCUYtNaol4HkrngDrgKK7FTG4h\/1xcoaZ4JloF3l5Zd8mZmRh1\/YjFCGYMhs\/X7\/6NVEdS7cRIUOBsgXkayZra6GZAr3wr2ezGhsJaqywvaHXVOKJaWRGUI34semBMMQis28zDBwZUZdmVUNoeIcxzmViGAkqdpGFgyzs7Nbut0u7ttJhObPM\/NZVRfSVn+tNU4inEiZTUR+OV4CMKtjiRMUoKMnzc\/PQxgd8k1rjehDGAQzW10NyXGcC4joz1MmqIzM3BbDzZUK73oeSvsy121TggHH\/0t830fBVORPFL7McXBZrfUfKaVQ3qxqG1kwaK2BfbCikCgqMXme98GqC2mrv8n2xHUnrw1T4fM67dq167h+v48XJO9DOWN+fj6zrmZb+2yD7szMzOlhGO7Lo93pdI4ZtbBuRj1TTIdkt4fMzc0N0MPXQisD4GxZ1tPn5+cHXsHGBINSagj3nniZ+0Q0QJc2RVuA3jSEozfqLdS9o0Zg4EiCISP8GdP3giA4apwh0GX2XFDnEiQCIjrJ87zcj77MCdpmpe0ye22yTx5eSDRPHXdiTpnBsYdAF\/GtRJ1LfJ++7\/tIwGpUMIBevEAMQkARYBGHgT8fxWsSBWwcEeGijWX8PpJgyAh\/xhSNoCSNuJfMYVrrC5VSyC\/JbCIyTELL6lTmBFVKPYOZr2t6D6tBz3XdZ4oIYlQym2VZI2tIaeHP5gBsvIJYE\/zTWlngOFMAAALtSURBVAPfJK8KOQAlH+153k1NagyQOMOSclEGZRiGx0U1Cw2IxK1EdKbneV\/FZrXWwF8oW4QmyZ9RBENW+DNov5KZl6XLNvFA6tIwMQ2oOJ7pTTDqKyI1M6tIu677VBH5YoGA2en7\/nzdNa+F8SXwLRCH82TP875Sdb1p4c+GBiz7D2ZmFORZU01rjes6ru2ZDWUFPc97SaOCQSl1+8TExAkIIwZYBREhLuEtzDyI4DOgLrB+DorkGh8rrP95L3zePioLhozw58Ec\/X7\/xKuvvhoW5jXXUtCGV6yRiH7P87yk22zYL8djNOwjIs\/zfR8u50O+5WiG8f2OlOCUEf4MuiMnuLXN8JL2ql4Yhqc0LRgG33tUtj4CZEGyBn4gom0i8jrf9+EmhLZQFPZbxKvKgiEt\/NlM0mjcfNHCq\/5esvjNXQcPHjwBhXrS6Jc5QZVSL2PmZPHgqstdE\/211tHVNXM9IlJZQ8oKf8Yk4wRkGYXJWutvKaUGB3NOe1eaYNiRqH1Qdf6bfd+\/EYNc132CiAyqZJuGKDTECEAtRm7EmUqpyaoTRP1F5CfxIjZFdFBybmlp6aVKKVTjvsO2bdQIPIqITkOpd6B2FNFYrd+NT\/6lIgIQkNuICDUyUe9wwrbtLWEYAkfilCAIPrd37148\/BUNOJpE9CtKqX8jotvDMLzbtm3EbQBy72jbtk8NguCGKjxdLX6UmRfGR9u2p4Ig+LZt29Be7w6CAO\/8g2zbBr8eSUTXVfXCaK3BQ8SW3NTpdO4UkcP6\/f5xJk8IhsdVj4HJ4o\/rujtxvSeimy3LQpTy3WEYLonIZsuytogIXLyTrYe\/aq0hJE4zC20cMafMC7LeZ50D6xyoxoFxCAZEFg6uDlAi1vKpXI11673XOfDflwPjEAyIT0Ccwl2Tk5Nbd+\/enRuS+9+X1es7W+fAocOB1gUDWGGQiW9h5tceOqxZX+k6B352OTAuwaBRxAWBEz+7rF7f+ToHDh0O\/BdNQGUjM1mtlwAAAABJRU5ErkJggg==\"\/><clipPath id=\"ree5a\"><path d=\"M0 30V0h106.216v30z\"\/><\/clipPath><\/defs><g><g opacity=\".4\"><g clip-path=\"url(&quot;#ree5a&quot;)\"><use transform=\"scale(.4084 .4054)\" xlink:href=\"#ree5b\"\/><\/g><\/g><\/g><\/svg>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "webinar"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Add data specific to Webinars",
+    "show_in_graphql": 1,
+    "graphql_field_name": "groupWebinar",
+    "modified": 1575431315
+}

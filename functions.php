@@ -232,3 +232,5 @@ add_filter( 'rest_prepare_post', 'wp_api_encode_yoast', 10, 3 );
 add_filter( 'rest_prepare_category', 'wp_api_encode_yoast', 10, 3 );
 add_filter( 'rest_prepare_page', 'wp_api_encode_yoast', 10, 3 );
 add_filter( 'rest_prepare_post_tag', 'wp_api_encode_yoast', 10, 3 );
+
+

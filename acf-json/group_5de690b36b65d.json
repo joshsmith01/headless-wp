@@ -1,0 +1,58 @@
+{
+    "key": "group_5de690b36b65d",
+    "title": "Attribution Group",
+    "fields": [
+        {
+            "key": "field_5de690edc538f",
+            "label": "Authors",
+            "name": "authors",
+            "type": "relationship",
+            "instructions": "Add one or more authors",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "author"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Assign one or more authors to assign credit. This group can be shared across any posts that require author attribution.",
+    "show_in_graphql": 1,
+    "graphql_field_name": "groupAuthor",
+    "modified": 1575404702
+}

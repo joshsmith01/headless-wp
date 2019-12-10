@@ -1,0 +1,534 @@
+{
+    "key": "group_5de6b93d9764d",
+    "title": "Case Study Group",
+    "fields": [
+        {
+            "key": "field_5de6c0c370421",
+            "label": "Case Study Details",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5de6b98bd323c",
+            "label": "Header Video",
+            "name": "header_video",
+            "type": "url",
+            "instructions": "Add a complete URL for the video that should play in the header",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "https:\/\/youtube.com\/my-video"
+        },
+        {
+            "key": "field_5de6b9bbd323d",
+            "label": "Header Image",
+            "name": "header_image",
+            "type": "image",
+            "instructions": "Select an image that shall be used in the header",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5de6bb88d3246",
+            "label": "Representative Image",
+            "name": "representative_image",
+            "type": "image",
+            "instructions": "Select an image that represents the clinic or owner",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5de6bbcdd3247",
+            "label": "Short Testimonial About WebPT",
+            "name": "short_testimonial_about_webpt",
+            "type": "wysiwyg",
+            "instructions": "Use a short testimonial from the clinic owner about WebPT. No images, please.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_5de6beead324b",
+            "label": "Setting (Home Page Testimonial Block)",
+            "name": "setting_home_page_testimonial_block",
+            "type": "radio",
+            "instructions": "Choose a setting to add Case Study to setting Testimonials block. Leave N\/A otherwise",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "choices": {
+                "na": "N\/A",
+                "single-clinics": "Single Clinics",
+                "multi-site-private-practices": "Multi-Site Private Practices",
+                "hospital-based-facilities": "Hospital-Based Facilites",
+                "outpatient-home-health": "Outpatient Home Health"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "na",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5de6c08d7041f",
+            "label": "Owner",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5de6b9d9d323e",
+            "label": "Clinic Owner Name",
+            "name": "clinic_owner_name",
+            "type": "text",
+            "instructions": "Add the owner's name",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "Heidi Jannenga",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5de6ba50d3240",
+            "label": "Clinic Owner Title",
+            "name": "clinic_owner_title",
+            "type": "text",
+            "instructions": "Add the title of the clinic owner",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "Cheif Executive Officer",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5de6ba15d323f",
+            "label": "Clinic Owner Credentials",
+            "name": "clinic_owner_credentials",
+            "type": "text",
+            "instructions": "Add a comma-separated list of abbreviated credentials",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "DPT, MD, PhD",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5de6c09b70420",
+            "label": "Clinic",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5de6ba82d3241",
+            "label": "Clinic Location",
+            "name": "clinic_location",
+            "type": "textarea",
+            "instructions": "Add an address or a blurb about how many locations exist",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_5de6bb3cd3245",
+            "label": "Key Achievements",
+            "name": "key_achievements",
+            "type": "wysiwyg",
+            "instructions": "Add a small blurb about the clinic's and or owner's achievements in the field of Physical Therapy",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_5de6c1f9a1d11",
+            "label": "Clinic Details",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5de6bac8d3243",
+            "label": "Open Since",
+            "name": "open_since",
+            "type": "text",
+            "instructions": "Add the date on which the clinic opened. Add the full date, year, month or any combination thereof.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5de6bb05d3244",
+            "label": "Member Since",
+            "name": "member_since",
+            "type": "date_picker",
+            "instructions": "Add the year the member joined WebPT",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "display_format": "Y",
+            "return_format": "Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_5de6baaed3242",
+            "label": "Number of Providers",
+            "name": "number_of_providers",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5de6bcc7d3248",
+            "label": "Clinic Size",
+            "name": "clinic_size",
+            "type": "radio",
+            "instructions": "Select the size of the clinic",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "choices": {
+                "single-clinic": "Single Clinic",
+                "2-10-clinics": "2-10 Clinics",
+                "11-plus": "11+ Clinics",
+                "educational-institution": "Education Institution",
+                "hospital": "Hospital"
+            },
+            "allow_null": 1,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5de6bd5ed3249",
+            "label": "Clinic Specialty",
+            "name": "clinic_specialty",
+            "type": "checkbox",
+            "instructions": "Select as many specialties as needed",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "choices": {
+                "educational": "Educational",
+                "hand-therapy": "Hand Therapy",
+                "occupational-therapy": "Occupational Therapy",
+                "pediatrics": "Pediatrics",
+                "pelvic-health": "Pelvic Health",
+                "physical-therapy": "Physical Therapy",
+                "speech-language": "Speech Language",
+                "sports-medicine": "Sports Medicine"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        },
+        {
+            "key": "field_5de6be4ed324a",
+            "label": "Products",
+            "name": "products",
+            "type": "checkbox",
+            "instructions": "Select as many Products as needed",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "choices": {
+                "billing-software": "Billing Software",
+                "emr": "EMR",
+                "outcomes": "Outcomes",
+                "rcm-services": "RCM Services",
+                "scheduling": "Scheduling",
+                "reach": "Reach",
+                "interoperability": "Interoperability",
+                "ceu": "CEU",
+                "home-exercise-program": "Home Exercise Program"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        },
+        {
+            "key": "field_5de6c325e2a08",
+            "label": "Form",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5de6c32ee2a09",
+            "label": "Form Title",
+            "name": "form_title",
+            "type": "text",
+            "instructions": "Add a title for the form",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5de6c343e2a0a",
+            "label": "Form Embed Script",
+            "name": "form_embed_script",
+            "type": "text",
+            "instructions": "Likely, this will be an embed script generated from Pardot. Place that here",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": "https:\/\/go.pardot.com\/l\/8532\/2019-10-16\/7lgct8",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5de6c398e2a0b",
+            "label": "Form URL",
+            "name": "form_url",
+            "type": "url",
+            "instructions": "Add a Form URL here",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "case-study"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "show_in_graphql": 1,
+    "graphql_field_name": "groupCaseStudy",
+    "modified": 1575404531
+}
