@@ -474,6 +474,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_5df406ea4c0d4",
+            "label": "Form Body",
+            "name": "form_body",
+            "type": "textarea",
+            "instructions": "Add a short body for the form if needed.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
             "key": "field_5de6c343e2a0a",
             "label": "Form Embed Script",
             "name": "form_embed_script",
@@ -528,7 +547,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "show_in_graphql": 1,
-    "graphql_field_name": "groupCaseStudy",
-    "modified": 1575404531
+    "modified": 1576273697
 }
