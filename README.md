@@ -10,7 +10,7 @@
 * Stable tag: master
 * Donate link: https://efficiencyofmovement.com
 
-## Description
+## imprortant Description
 If you have use WordPress as a headless CMS you will likely not want to expose your data to search engines. It is best just to redirect your users to a new site or a subdomain.
 
 
