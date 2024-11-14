@@ -178,6 +178,13 @@ function headless_wp_tips_and_tricks_init() {
     );
 
     register_post_type( 'tips-and-tricks', $args );
+
+	register_nav_menus(
+		array(
+			'primary' => __( 'Primary' ),
+			'main_navigation' => __( 'Main Navigation' )
+		)
+	);
 }
 
 add_action( 'init', 'headless_wp_tips_and_tricks_init' );
@@ -193,14 +200,6 @@ function deploy_on_publish() {
 
 add_action( 'publish_post', 'deploy_on_publish' );
 
-/**
- * Add an ACF Options page
- */
-if ( function_exists( 'acf_add_options_page' ) ) {
-
-    acf_add_options_page();
-
-}
 
 // Add Yoase SEO data to the WP REST API response
 function wp_api_encode_yoast( $data, $post, $context ) {
