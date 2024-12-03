@@ -94,7 +94,8 @@ add_action( 'after_setup_theme', 'headless_wp_setup' );
  */
 
 function deploy_on_publish() {
-    wp_remote_post( 'https://api.netlify.com/build_hooks/674b872e76ebfeb716daa8ef', '' );
+	$netlify_main_build_hook = get_field( 'netlify_main_build_hook', 'option' );
+    wp_remote_post( $netlify_main_build_hook, '' );
 }
 
 add_action( 'publish_post', 'deploy_on_publish' );

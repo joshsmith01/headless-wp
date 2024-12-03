@@ -1,7 +1,26 @@
 {
     "key": "group_673f3f484092f",
-    "title": "Favicon",
+    "title": "Site Options",
     "fields": [
+        {
+            "key": "field_674f2d1db088c",
+            "label": "Favicon",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "graphql_field_name": "favicon",
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
         {
             "key": "field_673f3f4978857",
             "label": "Favicon (Default and displayed on light pages)",
@@ -63,6 +82,47 @@
             "show_in_graphql": 1,
             "graphql_description": "",
             "graphql_field_name": "faviconDisplayedOnDarkPages"
+        },
+        {
+            "key": "field_674f2d2eb088d",
+            "label": "Builds",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "graphql_field_name": "builds",
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_674f2d3bb088e",
+            "label": "Netlify Main Build Hook",
+            "name": "netlify_main_build_hook",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "netlifyMainBuildHook",
+            "graphql_non_null": 0
         }
     ],
     "location": [
@@ -94,5 +154,5 @@
     "graphql_types": "",
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1732202943
+    "modified": 1733242375
 }
