@@ -1,0 +1,124 @@
+{
+    "key": "group_6740ddc91e96b",
+    "title": "Portfolio Data",
+    "fields": [
+        {
+            "key": "field_6740ddca0cb85",
+            "label": "Title",
+            "name": "title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "This title is what will be displayed on Portfolio archive page cards.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "title",
+            "graphql_non_null": 0
+        },
+        {
+            "key": "field_6740ddffb654e",
+            "label": "External URL",
+            "name": "external_url",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "This is the URL for the external resource. The link to the CPT is already included.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "externalUrl",
+            "graphql_non_null": 0
+        },
+        {
+            "key": "field_6742594546d90",
+            "label": "Tech Used",
+            "name": "tech_used",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Select the tech used to make this asset. Order of tech will matter as the first item will be displayed more often than any of the other selections.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "hubspot": "HubSpot",
+                "wordpress": "WordPress",
+                "gatsbyjs": "GatsbyJS",
+                "nextjs": "NextJS",
+                "aws": "AWS",
+                "reactjs": "ReactJS",
+                "zurb_foundation": "Zurb Foundation",
+                "handlesbarsjs": "HandelbarsJS",
+                "webflow": "Webflow",
+                "bootstrap": "Bootstrap"
+            },
+            "default_value": [],
+            "return_format": "label",
+            "multiple": 1,
+            "allow_custom": 0,
+            "placeholder": "",
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 1,
+            "ajax": 1,
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "techUsed",
+            "graphql_non_null": 0,
+            "search_placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "portfolio"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "AcfPortfolioData",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1732421983
+}

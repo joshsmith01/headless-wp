@@ -1,5 +1,12 @@
 #### [unreleased]
 
+### 1.0.7 / 2024-12-03
+#### Added
+* New CPT and ACF data for API
+#### Updated
+* Update the Netlify webhook to publish
+* Update a spelling error
+
 ### 1.0.5 / 2018-08-11
 #### Added
 * Add existing taxonomies to new CPTs

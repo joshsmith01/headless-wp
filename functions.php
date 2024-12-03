@@ -88,120 +88,19 @@ endif; // headless-wp_setup
 add_action( 'after_setup_theme', 'headless_wp_setup' );
 
 
-/**
- * Register a speaking post type.
- *
- * @link http://codex.wordpress.org/Function_Reference/register_post_type
- */
-function headless_wp_talk_init() {
-    $labels = array(
-        'name'               => _x( 'Talks', 'post type general name', 'headless-wp' ),
-        'singular_name'      => _x( 'Talk', 'post type singular name', 'headless-wp' ),
-        'menu_name'          => _x( 'Talks', 'admin menu', 'headless-wp' ),
-        'name_admin_bar'     => _x( 'Talk', 'add new on admin bar', 'headless-wp' ),
-        'add_new'            => _x( 'Add New', 'talk', 'headless-wp' ),
-        'add_new_item'       => __( 'Add New Talk', 'headless-wp' ),
-        'new_item'           => __( 'New Talk', 'headless-wp' ),
-        'edit_item'          => __( 'Edit Talk', 'headless-wp' ),
-        'view_item'          => __( 'View Talk', 'headless-wp' ),
-        'all_items'          => __( 'All Talks', 'headless-wp' ),
-        'search_items'       => __( 'Search Talks', 'headless-wp' ),
-        'parent_item_colon'  => __( 'Parent Talks:', 'headless-wp' ),
-        'not_found'          => __( 'No talks found.', 'headless-wp' ),
-        'not_found_in_trash' => __( 'No talks found in Trash.', 'headless-wp' )
-    );
-
-    $args = array(
-        'labels'             => $labels,
-        'description'        => __( 'Description.', 'headless-wp' ),
-        'public'             => true,
-        'publicly_queryable' => true,
-        'show_ui'            => true,
-        'show_in_menu'       => true,
-        'show_in_rest'       => true,
-        'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'talks' ),
-        'capability_type'    => 'post',
-        'has_archive'        => true,
-        'hierarchical'       => false,
-        'menu_position'      => null,
-        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
-        'menu_icon'          => 'dashicons-megaphone',
-        'taxonomies'         => array( 'category', 'post_tag' )
-    );
-
-    register_post_type( 'talks', $args );
-}
-
-add_action( 'init', 'headless_wp_talk_init' );
-
-/**
- * Register a Tips and Tricks post type.
- *
- * @link http://codex.wordpress.org/Function_Reference/register_post_type
- */
-function headless_wp_tips_and_tricks_init() {
-    $labels = array(
-        'name'               => _x( 'Tips and Tricks', 'post type general name', 'headless-wp' ),
-        'singular_name'      => _x( 'Tips and Tricks', 'post type singular name', 'headless-wp' ),
-        'menu_name'          => _x( 'Tips and Tricks', 'admin menu', 'headless-wp' ),
-        'name_admin_bar'     => _x( 'Tips and Tricks', 'add new on admin bar', 'headless-wp' ),
-        'add_new'            => _x( 'Add New', 'Tips and Tricks', 'headless-wp' ),
-        'add_new_item'       => __( 'Add New Tips and Tricks', 'headless-wp' ),
-        'new_item'           => __( 'New Tips and Tricks', 'headless-wp' ),
-        'edit_item'          => __( 'Edit Tips and Tricks', 'headless-wp' ),
-        'view_item'          => __( 'View Tips and Tricks', 'headless-wp' ),
-        'all_items'          => __( 'All Tips and Tricks', 'headless-wp' ),
-        'search_items'       => __( 'Search Tips and Tricks', 'headless-wp' ),
-        'parent_item_colon'  => __( 'Parent Tips and Tricks:', 'headless-wp' ),
-        'not_found'          => __( 'No Tips and Tricks found.', 'headless-wp' ),
-        'not_found_in_trash' => __( 'No Tips and Tricks found in Trash.', 'headless-wp' )
-    );
-
-    $args = array(
-        'labels'             => $labels,
-        'description'        => __( 'Description.', 'headless-wp' ),
-        'public'             => true,
-        'publicly_queryable' => true,
-        'show_ui'            => true,
-        'show_in_menu'       => true,
-        'show_in_rest'       => true,
-        'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'tips-tricks' ),
-        'capability_type'    => 'post',
-        'has_archive'        => true,
-        'hierarchical'       => false,
-        'menu_position'      => null,
-        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
-        'menu_icon'          => 'dashicons-money',
-        'taxonomies'         => array( 'category', 'post_tag' )
-    );
-
-    register_post_type( 'tips-and-tricks', $args );
-
-	register_nav_menus(
-		array(
-			'primary' => __( 'Primary' ),
-			'main_navigation' => __( 'Main Navigation' )
-		)
-	);
-}
-
-add_action( 'init', 'headless_wp_tips_and_tricks_init' );
-
 
 /**
  * Send a request to build the site once a post is published
  */
 
 function deploy_on_publish() {
-    wp_remote_post( 'https://api.netlify.com/build_hooks/5b0f8c101f12b738363f6567', '' );
+    wp_remote_post( 'https://api.netlify.com/build_hooks/674b872e76ebfeb716daa8ef', '' );
 }
 
 add_action( 'publish_post', 'deploy_on_publish' );
 
 
-// Add Yoase SEO data to the WP REST API response
+// Add Yoast SEO data to the WP REST API response
 function wp_api_encode_yoast( $data, $post, $context ) {
     $yoastMeta = array(
         'yoast_wpseo_focuskw'               => get_post_meta( $post->ID, '_yoast_wpseo_focuskw', true ),
@@ -232,4 +131,47 @@ add_filter( 'rest_prepare_category', 'wp_api_encode_yoast', 10, 3 );
 add_filter( 'rest_prepare_page', 'wp_api_encode_yoast', 10, 3 );
 add_filter( 'rest_prepare_post_tag', 'wp_api_encode_yoast', 10, 3 );
 
+
+
+
+
+
+/**
+ * Registers a custom field in the WPGraphQL schema for the site favicon.
+ */
+function register_favicon_field() {
+	// Check if function exists to prevent fatal error if WPGraphQL is not active
+	if ( function_exists( 'register_graphql_field' ) ) {
+		register_graphql_field( 'GeneralSettings', 'faviconDefault', [
+			'type'        => 'String',
+			'description' => __( 'Site default favicon URL', 'headless-wp' ),
+			'resolve'     => function () {
+				$favicon_id = get_field( 'favicon_default', 'option' );
+				if ( ! empty( $favicon_id ) ) {
+					$favicon_url = wp_get_attachment_image_url( $favicon_id, 'full' );
+
+					return $favicon_url;
+				}
+
+				return null;
+			}
+		] );
+		register_graphql_field( 'GeneralSettings', 'faviconDark', [
+			'type'        => 'String',
+			'description' => __( 'Site dark favicon URL', 'headless-wp' ),
+			'resolve'     => function () {
+				$favicon_id = get_field( 'favicon_dark', 'option' );
+				if ( ! empty( $favicon_id ) ) {
+					$favicon_url = wp_get_attachment_image_url( $favicon_id, 'full' );
+
+					return $favicon_url;
+				}
+
+				return null;
+			}
+		] );
+	}
+}
+// Hook into WPGraphQL's register_types action
+add_action( 'graphql_register_types', 'register_favicon_field' );
 

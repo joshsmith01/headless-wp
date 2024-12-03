@@ -1,0 +1,98 @@
+{
+    "key": "group_673f3f484092f",
+    "title": "Favicon",
+    "fields": [
+        {
+            "key": "field_673f3f4978857",
+            "label": "Favicon (Default and displayed on light pages)",
+            "name": "favicon_default",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "This favicon will be displayed when the site theme is set to light mode.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "",
+            "return_format": "id",
+            "library": "all",
+            "acfe_thumbnail": 0,
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": 512,
+            "max_height": 512,
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "thumbnail",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "faviconDefault"
+        },
+        {
+            "key": "field_673f3fef78858",
+            "label": "Favicon (Displayed on dark pages)",
+            "name": "favicon_dark",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "This favicon will be displayed when the site theme is set to dark mode.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "uploader": "wp",
+            "return_format": "id",
+            "library": "all",
+            "acfe_thumbnail": 0,
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": 512,
+            "max_height": 512,
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "thumbnail",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "faviconDisplayedOnDarkPages"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "options-site"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "favicon",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1732202943
+}
