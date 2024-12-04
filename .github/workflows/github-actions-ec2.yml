@@ -19,7 +19,7 @@ jobs:
         uses: D3rHase/rsync-deploy-action@latest
         with:
           HOST: ${{ secrets.HOST_DNS }}
-          PORT: ${{ secrets.PORT }}
+          PORT: 22
           USER: ${{ secrets.USERNAME }}
           PRIVATE_SSH_KEY: ${{ secrets.EC2_SSH_KEY }}
           REPOSITORY_PATH: '/*'
