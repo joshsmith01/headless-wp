@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 1.0.8 / 2024-12-04
+#### Added
+* GitHub Actions to deploy to AWS EC2
+
 ### 1.0.7 / 2024-12-03
 #### Added
 * New CPT and ACF data for API
