@@ -15,24 +15,16 @@ jobs:
       - name: Checkout the files
         uses: actions/checkout@v2
 
-      - name: Deploy to Server 1
-        uses: easingthemes/ssh-deploy@main
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
-          REMOTE_HOST: ${{ secrets.HOST_DNS }}
-          REMOTE_USER: ${{ secrets.USERNAME }}
-          TARGET: ${{ secrets.TARGET_DIR }}
-
-      - name: Executing remote ssh commands using ssh key
-        uses: appleboy/ssh-action@master
+      - name: Deploy files via rsync
+        uses: D3rHase/rsync-deploy-action@latest
         with:
-          host: ${{ secrets.HOST_DNS }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.EC2_SSH_KEY }}
-          script: |
-            sudo apt-get -y update
-            sudo apt-get install -y apache2
-            sudo systemctl start apache2
-            sudo systemctl enable apache2
-            cd home
-            sudo mv -r * /var/www/html
+          HOST: ${{ secrets.HOST_DNS }}
+          PORT: ${{ secrets.PORT }}
+          USER: ${{ secrets.USERNAME }}
+          PRIVATE_SSH_KEY: ${{ secrets.EC2_SSH_KEY }}
+          REPOSITORY_PATH: '/*'
+          SERVER_PATH: ${{ secrets.TARGET_DIR }}
+
+      - name: Notify Deployment Success
+        run: echo "Deployment to ${{ secrets.HOST_DNS }} completed successfully!"
+
