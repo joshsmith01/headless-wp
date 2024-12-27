@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 1.0.9 / 2024-12-27
+#### Added
+* GitHub Actions to deploy to AWS EC2
+
 ### 1.0.8 / 2024-12-04
 #### Added
 * GitHub Actions to deploy to AWS EC2

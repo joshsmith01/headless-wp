@@ -175,4 +175,7 @@ function register_favicon_field() {
 }
 // Hook into WPGraphQL's register_types action
 add_action( 'graphql_register_types', 'register_favicon_field' );
-
+/**
+ * Remove the HTML from post excerpts. It makes it easier to deal with the string of text for NEXT.js
+ */
+remove_filter( 'the_excerpt', 'wpautop' );
